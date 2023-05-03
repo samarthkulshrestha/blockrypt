@@ -21,7 +21,11 @@ samarth kulshrestha
 
 "The fastest way to learn how blockchains work is to build one", says
 [Hackernoon](https://hackernoon.com/). **Blockrypt** is a blockchain that I
-built purely to understand how blockchains work.
+built to understand how blockchains function.
+
+A blockchain is an immutable, sequential chain of records called Blocks.
+They can contain transactions, files or any data you like, really. But the
+important thing is that they’re chained together using hashes.
 
 ## Requirements
 
@@ -34,4 +38,28 @@ built purely to understand how blockchains work.
 pip install Flask==2.3.2 requests==2.29.0
 ```
 
++ An HTTP Client (for example[Postman](https://www.postman.com/downloads/) or
+[cURL](https://curl.se/)) is also needed.
 
+## Running
+
++ Clone the repository.
+
+```
+git clone https://github.com/samarthkulshrestha/blockrypt.git
+```
+
++ Enter the `blockrypt` directory.
+
+```
+cd blockrypt/
+```
+
++ Run Blockrypt.
+
+```
+python src/blockrypt.py
+```
+
+You will be asked for a port number. Here, enter the port you want to run
+Blockrypt on. The port must be idle.
