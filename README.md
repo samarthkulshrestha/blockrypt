@@ -66,5 +66,44 @@ Blockrypt on. The port must be idle.
 
 ## API
 
-+ `/chain` ➡ method: GET
-    Returns the full blockchain.
++ `/chain`: Returns the entire blockchain.
+    + method: GET
+
++ `/mine`: Runs the proof of work algorithm and mines a new block on the chain.
+    + method: GET
+
++ `/transactions/new`: Adds a transaction to a block.
+    + method: POST
+    + data:
+    ```json
+    {
+        "sender": "<sender's address>",
+        "recipient": "<recipient's address>",
+        "amount": 7
+    }
+    ```
+
++ `/nodes/register`: Registers new nodes on the blockchain.
+    + method: POST
+    + data:
+    ```json
+    {
+        "nodes": ["http://127.0.0.1:6969"]
+    }
+    ```
++ `/nodes/resolve`: Runs the consensus algorithm to determine the authoritative
+  chain.
+    + method: GET
+
+## Contribute
+
+ [![pull requests welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+ [![python style guide](https://img.shields.io/badge/python-style%20guide-blue?style=flat-square)](https://peps.python.org/pep-0008/)
+
++ I <3 pull requests and bug reports!
++ Don't hesitate to [tell me my code-fu sucks](https://github.com/samarthkulshrestha/blockrypt/issues/new), but please tell me why.
+
+## License
+
+Blockrypt is licensed under the MIT License.
+Copyright (c) 2023 Samarth Kulshrestha.
