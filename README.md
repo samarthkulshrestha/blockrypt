@@ -106,4 +106,5 @@ Blockrypt on. The port must be idle.
 ## License
 
 Blockrypt is licensed under the MIT License.
+
 Copyright (c) 2023 Samarth Kulshrestha.
