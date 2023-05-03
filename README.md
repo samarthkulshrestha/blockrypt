@@ -63,3 +63,8 @@ python src/blockrypt.py
 
 You will be asked for a port number. Here, enter the port you want to run
 Blockrypt on. The port must be idle.
+
+## API
+
++ `/chain` ➡ method: GET
+    Returns the full blockchain.
